@@ -1,0 +1,41 @@
+# Cấu hình Bundler
+/.bundle
+/vendor/bundle/*
+
+# Tệp môi trường
+/.env*
+
+# Tệp nhật ký và tệp tạm thời
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Tệp PID (Process ID)
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
+
+# Tệp lưu trữ (tệp tải lên trong quá trình phát triển và cơ sở dữ liệu SQLite)
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/
+!/tmp/storage/.keep
+
+# Tài sản được biên dịch
+/public/assets
+
+# Khóa chính để giải mã thông tin xác thực
+/config/master.key
+
+# Tệp cấu hình cơ sở dữ liệu cục bộ (nếu có)
+/config/database.yml
+
+# Tệp kiểm thử (nếu không muốn đưa vào repo)
+/test/
+
+# Tệp cài đặt cục bộ
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml

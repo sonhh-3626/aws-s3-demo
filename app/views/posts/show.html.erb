@@ -1,0 +1,21 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @post %>
+
+<p>
+  <strong>Image:</strong>
+  <% if @post.image.attached? %>
+    <div class="img-container">
+      <%= image_tag @post.image, style: "width: 400px; display: block" %>
+    </div>
+  <% else %>
+    No image attached.
+  <% end %>
+</p>
+
+<div>
+  <%= link_to "Edit this post", edit_post_path(@post), class: "btn btn-primary" %> |
+  <%= link_to "Back to posts", posts_path, class: "btn btn-secondary" %>
+
+  <%= button_to "Destroy this post", @post, method: :delete, class: "btn btn-danger" %>
+</div>
